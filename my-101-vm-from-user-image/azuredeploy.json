@@ -19,6 +19,13 @@
                 "description": ""
             }
         },
+        "location": {
+            "type": "string",
+            "defaultValue": "South East Asia",
+            "metadata": {
+                "description": ""
+            }
+        },
         "userImageStorageAccountName": {
             "type": "string",
             "defaultValue": "guwevalstore",
@@ -65,7 +72,7 @@
         }
     },
     "variables": {
-        "location": "[resourceGroup().location]",
+        "location": "[parameters('location')]",
         "publicIPAddressName": "[concat(parameters('vmName'),'pip')]",
         "vmName": "[parameters('vmName')]",
         "virtualNetworkName": "[concat(parameters('vmName'),'vnet')]",
