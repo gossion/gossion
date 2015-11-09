@@ -7,7 +7,9 @@
             "defaultValue": "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
             "allowedValues": [
                 "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
-                "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel7.1-20151104.vhd"
+                "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel7.1-20151104.vhd",
+                "http://guwewrstore.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
+                "http://guwewrstore.blob.core.windows.net/vhds/rhel7.1-20151104.vhd"
             ],
             "metadata": {
                 "description": ""
@@ -41,7 +43,7 @@
         },
         "adminUserName": {
             "type": "string",
-            "defaultValue": "guwe",
+            "defaultValue": "rhui",
             "metadata": {
                 "description": "UserName for the Virtual Machine"
             }
