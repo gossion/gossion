@@ -210,7 +210,7 @@
               "fileUris": [
                 "https://raw.githubusercontent.com/gossion/gossion/b1/my-101-vm-from-user-image/mongo-install-centos.sh"
               ],
-              "commandToExecute": "sh mongo-install-centos.sh"
+              "commandToExecute": "bash mongo-install-centos.sh"
             }
           }
         }
