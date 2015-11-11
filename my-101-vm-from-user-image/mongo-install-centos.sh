@@ -22,9 +22,13 @@ yum install -y gcc
 status2=$?
 yum install -y gnome-desktop
 status3=$?
+yum install -y eclipse
+status4=$?
+yum install -y mysql
+status5=$?
 echo "===========================midloging====================================" >> /tmp/install.log
 hostname=`hostname`
-status=$status1$status2$status3
+status=$status1$status2$status3$status4$status5
 complete_at=`date | cut -d ' ' -f4`
 duration="${start_at}To${complete_at}"
 
