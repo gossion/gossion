@@ -4,13 +4,7 @@
     "parameters": {
         "userImageUri": {
             "type": "string",
-            "defaultValue": "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
-            "allowedValues": [
-                "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
-                "http://guwevalstore.blob.core.windows.net/copiedvhds/rhel7.1-20151104.vhd",
-                "http://guwewrstore.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
-                "http://guwewrstore.blob.core.windows.net/vhds/rhel7.1-20151104.vhd"
-            ],
+            "defaultValue": "http://guwewestr.blob.core.windows.net/copiedvhds/rhel6.7-20151105.vhd",
             "metadata": {
                 "description": ""
             }
@@ -23,14 +17,14 @@
         },
         "location": {
             "type": "string",
-            "defaultValue": "South East Asia",
+            "defaultValue": "West Europe",
             "metadata": {
                 "description": ""
             }
         },
         "userImageStorageAccountName": {
             "type": "string",
-            "defaultValue": "guwevalstore",
+            "defaultValue": "guwewestr",
             "metadata": {
                 "description": "This is the name of the your storage account"
             }
