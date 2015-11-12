@@ -32,7 +32,10 @@ status=$status1$status2$status3$status4$status5
 complete_at=`date | cut -d ' ' -f4`
 duration="${start_at}To${complete_at}"
 
-url="http://guwe-u1404.southeastasia.cloudapp.azure.com/stress/${hostname//-/_}/$status/${duration//:/_}/"
+ipstr=`ifconfig`
+ip=`echo ${ipstr#*addr:}|cut -d ' ' -f1`
+
+url="http://guwe-u1404.southeastasia.cloudapp.azure.com/stress/${hostname//-/_}/$status/${duration//:/_}/${ip//./_}/"
 echo "curl $url" >>/tmp/install.log 2>&1
 curl $url
 
