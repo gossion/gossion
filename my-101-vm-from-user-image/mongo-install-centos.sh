@@ -18,13 +18,17 @@ echo "===========================startloging====================================
 #Install Mongo DB
 yum install -y mongodb-org >>/tmp/install.log 2>&1
 status1=$?
-yum install -y gcc 
+echo "=============================" >> /tmp/install.log
+yum install -y gcc >>/tmp/install.log 2>&1
 status2=$?
-yum install -y gnome-desktop
+echo "=============================" >> /tmp/install.log
+yum install -y gnome-desktop >>/tmp/install.log 2>&1
 status3=$?
-yum install -y eclipse
+echo "=============================" >> /tmp/install.log
+yum install -y eclipse >>/tmp/install.log 2>&1
 status4=$?
-yum install -y mysql
+echo "=============================" >> /tmp/install.log
+yum install -y mysql >>/tmp/install.log 2>&1
 status5=$?
 echo "===========================midloging====================================" >> /tmp/install.log
 hostname=`hostname`
